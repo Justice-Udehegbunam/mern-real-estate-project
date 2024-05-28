@@ -4,14 +4,16 @@ import { Home } from "./pages/Home.jsx";
 import { Profile } from "./pages/Profile.jsx";
 import { SignIn } from "./pages/SignIn.jsx";
 import { SignUp } from "./pages/SignUp.jsx";
+import { Header } from "./components/Header.jsx";
 
 export const App = () => {
   return (
     <Router>
+      <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/signin" element={<SignIn />} />
-        <Route path="/signup" element={<SignUp />} />
+        <Route path="/sign-in" element={<SignIn />} />
+        <Route path="/sign-up" element={<SignUp />} />
         <Route path="/about" element={<About />} />
         <Route path="/profile" element={<Profile />} />
       </Routes>
